@@ -5,7 +5,13 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>Code2Text.ico</ApplicationIcon>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Code2Text.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="NLog" Version="5.3.4" />
