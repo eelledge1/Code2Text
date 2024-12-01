@@ -105,7 +105,6 @@ public class ExampleClass
 ```csharp
 <h3>Hello, ProjectName!</h3>
 ```
-```
 
 ## Contributing
 
