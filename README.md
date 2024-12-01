@@ -124,12 +124,6 @@ This project is licensed under the MIT License. Feel free to use it, modify it, 
 
 If you encounter any issues or need help getting started, please open an issue on the GitHub repository. Contributions to improve the tool are greatly appreciated!
 
-## Future Features
 
-- **Web Interface**: Provide a simple web-based interface for selecting solutions and generating outputs.
-- **Code Highlighting**: Support for syntax highlighting in generated Markdown files.
-- **Plugin System**: Add extensibility for supporting more languages and custom extraction rules.
-
----
-We hope **Shn2Txt / Code2Text** proves valuable to your development workflows and helps you provide well-structured context to AI platforms for better interaction. If you have any feedback or suggestions, feel free to reach out. Happy coding!
+We hope **Code2Text** proves valuable to your development workflows and helps you provide well-structured context to AI platforms for better interaction. If you have any feedback or suggestions, feel free to reach out. Happy coding!
 
