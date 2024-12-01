@@ -1,6 +1,6 @@
-# Shn2Txt / Code2Text
+# Code2Text
 
-Welcome to **Shn2Txt / Code2Text**, a powerful and flexible tool designed for developers who need to extract and organize code from multi-project solutions. The application simplifies the process of aggregating code files from a solution into a well-organized, readable text format, with options to customize output based on specific needs. Whether you're doing code review, documentation, or providing detailed context to an AI platform like ChatGPT for better understanding, **Shn2Txt / Code2Text** has you covered.
+Welcome to **Code2Text**, a powerful and flexible tool designed for developers who need to extract and organize code from multi-project solutions. The application simplifies the process of aggregating code files from a solution into a well-organized, readable text format, with options to customize output based on specific needs. Whether you're doing code review, documentation, or providing detailed context to an AI platform like ChatGPT for better understanding, **Shn2Txt / Code2Text** has you covered.
 
 ## Purpose
 
