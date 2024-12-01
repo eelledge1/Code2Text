@@ -1,0 +1,14 @@
+{
+  "SolutionPath": "C:\\Users\\eelle\\source\\repos\\HomeHarmony",
+  "OutputPath": "C:\\Users\\eelle\\source\\repos\\HomeHarmony\\Code_Output.txt",
+  "Extensions": [ "*.cs", "*.razor", "*.css" ],
+  "ExclusionFolders": [ "\\bin\\", "\\obj\\", "\\Migrations\\" ],
+  "EnableParallelProcessing": true,
+  "OutputFormatting": true,
+  "SplitOutputByProject": true,
+  "ZipOutput": true,
+  "EnableLogging": true,
+  "EnableProgressReporting": true,
+  "IncludeProjectDependencies": true,
+  "MarkdownOutputFormatting": true
+}
