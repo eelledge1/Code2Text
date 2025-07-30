@@ -2,6 +2,7 @@
 using System.Text.Json;
 using System.Text;
 using System.Collections.Concurrent;
+using System.Xml.Linq;
 using NLog;
 
 class Program
@@ -165,11 +166,12 @@ class Program
     {
         try
         {
-            var lines = File.ReadAllLines(projectFile);
-            var dependencies = lines
-                .Where(line => line.Contains("<ProjectReference Include="))
-                .Select(line => line.Split('"')[1])
-                .Select(dep => Path.GetFileNameWithoutExtension(dep));
+            var doc = XDocument.Load(projectFile);
+            var dependencies = doc.Descendants("ProjectReference")
+                .Select(elem => elem.Attribute("Include")?.Value)
+                .Where(val => !string.IsNullOrEmpty(val))
+                .Select(val => Path.GetFileNameWithoutExtension(val!))
+                .ToList();
 
             if (dependencies.Any())
             {
