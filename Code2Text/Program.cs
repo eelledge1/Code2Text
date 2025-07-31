@@ -5,7 +5,7 @@ using System.Collections.Concurrent;
 using System.Xml.Linq;
 using NLog;
 
-class Program
+public class Program
 {
     private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
@@ -27,6 +27,11 @@ class Program
             return;
         }
 
+        ProcessSolution(config);
+    }
+
+    public static void ProcessSolution(Config config)
+    {
         if (config.EnableLogging)
         {
             Logger.Info("Started processing solution at path: {0}", config.SolutionPath);
@@ -63,7 +68,6 @@ class Program
                     .Where(file => !config.ExclusionFolders.Any(folder => file.Contains(folder)))
                     .ToArray();
 
-                // Use a thread-safe ConcurrentBag to store results from parallel processing
                 ConcurrentBag<string> fileContents = new ConcurrentBag<string>();
 
                 if (config.EnableParallelProcessing)
@@ -83,7 +87,6 @@ class Program
                     }
                 }
 
-                // Combine all results after parallel processing
                 foreach (var content in fileContents)
                 {
                     sb.Append(content);
@@ -278,7 +281,7 @@ class Program
         }
     }
 
-    class Config
+    public class Config
     {
         public string SolutionPath { get; set; }
         public string OutputPath { get; set; }
